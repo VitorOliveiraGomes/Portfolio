@@ -2,7 +2,8 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <meta name="description" content="Portfólio de Vitor Oliveira Gomes - Estudante de Análise e Desenvolvimento de Sistemas" />
   <title>Portfólio — Vitor Oliveira Gomes</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -18,10 +19,15 @@
         <a href="#featured">Projetos em Destaque</a>
         <a href="#projects">Projetos</a>
         <a href="#about">Sobre</a>
-        <a href="#education">Education</a>
+        <a href="#education">Formação</a>
         <a href="#certifications">Certificados</a>
         <a href="#skills">Habilidades</a>
         <a href="#contact">Contato</a>
+        <select id="language-selector" class="language-selector">
+          <option value="pt">PT</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+        </select>
         <a class="btn" id="download-cv" href="CV_Vitor_Oliveira_Gomes.pdf" download>Baixar CV</a>
       </nav>
     </div>
@@ -34,19 +40,26 @@
           <h2>Olá — eu sou o Vitor.</h2>
           <p>Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> com foco em Inteligência Artificial, Desenvolvimento Web e Análise de Dados. Busco constantemente aprender novas tecnologias e aplicá-las em projetos reais para crescer profissionalmente.</p>
           <p class="meta"><img src="./icons/1491254387-pindestinationmaplocation_82942.svg" alt="Localização" class="icon"/> Santo André, SP</p>
-          
         </div>
       </div>
     </section>
 
     <section id="featured" class="projects">
       <div class="container">
-        <h3>Projetos em Destaque</h3>
+        <h3 data-i18n="featured-title">Projetos em Destaque</h3>
         <div class="repos-grid">
           <article class="repo">
-            <h4><a href="https://chattea.yanramos.com.br/login?next=%2F" target="_blank" rel="noopener">Chatbot Educacional — Projeto ACEx</a></h4>
+            <h4><a href="https://chattea.yanramos.com.br/login?next=%2F" target="_blank" rel="noopener noreferrer">Chatbot Educacional — Projeto ACEx</a></h4>
             <p>Chatbot voltado para estudos e socialização, com foco em acessibilidade e personalização do aprendizado. Desenvolvido como parte do projeto ACEx (Atividades de Extensão).</p>
             <p><strong>Tecnologias:</strong> Python, HTML/CSS, JavaScript, APIs de linguagem natural.</p>
+            <div class="carousel">
+              <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+              <div class="carousel-container">
+                <img src="./imagens/Captura de tela 2025-11-13 213507.png" alt="Screenshot do Chatbot 1" class="carousel-img active"/>
+                <img src="./imagens/Captura de tela 2025-11-13 213524.png" alt="Screenshot do Chatbot 2" class="carousel-img"/>
+              </div>
+              <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+            </div>
           </article>
         </div>
       </div>
@@ -54,11 +67,11 @@
 
     <section id="projects" class="projects">
       <div class="container">
-        <h3>Projetos</h3>
-        <p class="lead">Abaixo estão os repositórios públicos mais recentes do meu GitHub.</p>
+        <h3 data-i18n="projects-title">Projetos</h3>
+        <p class="lead" data-i18n="projects-lead">Abaixo estão os repositórios públicos mais recentes do meu GitHub.</p>
         <div class="projects-controls">
           <button id="loadRepos" class="btn primary">Carregar meus projetos do GitHub</button>
-          <a class="btn" href="https://github.com/VitorOliveiraGomes" target="_blank" rel="noopener">Ver no GitHub</a>
+          <a class="btn" href="https://github.com/VitorOliveiraGomes" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
         </div>
         <div id="repos" class="repos-grid"></div>
       </div>
@@ -66,19 +79,22 @@
 
     <section id="about" class="about">
       <div class="container">
-        <h3>Sobre mim</h3>
+        <h3 data-i18n="about-title">Sobre mim</h3>
         <p>Sou um estudante dedicado de Análise e Desenvolvimento de Sistemas na Fundação Santo André, com foco em Inteligência Artificial, Desenvolvimento Web e Análise de Dados. Tenho raciocínio lógico, facilidade de aprendizado e gosto de resolver problemas práticos com tecnologia. Busco constantemente aprimorar minhas habilidades e contribuir com soluções inovadoras.</p>
       </div>
     </section>
 
     <section id="education" class="education">
       <div class="container">
-        <h3>Formação e Cursos</h3>
+        <h3 data-i18n="education-title">Formação, Cursos e Certificações</h3>
+        
+        <h4 class="section-subtitle" data-i18n="formation-subtitle">Formação Acadêmica</h4>
         <ul class="timeline">
           <li><strong>Fundação Santo André</strong> — Análise e Desenvolvimento de Sistemas (2024–2025)</li>
-          <li>IBM — Artificial Intelligence Fundamentals</li>
-          <li>IBM — Web Development Fundamentals</li>
-          <li>IBM — Cloud Computing Fundamentals</li>
+        </ul>
+
+        <h4 class="section-subtitle" data-i18n="courses-subtitle">Cursos Complementares</h4>
+        <ul class="timeline">
           <li>Introdução à Análise de Dados — Microsoft Power BI</li>
           <li>Pacote Office — Avançado</li>
           <li>Python — Intermediário</li>
@@ -86,28 +102,24 @@
           <li>VBA — Básico</li>
           <li>Inglês — Intermediário</li>
         </ul>
-      </div>
-    </section>
 
-    <section id="certifications" class="certifications">
-      <div class="container">
-        <h3>Certificações</h3>
+        <h4 class="section-subtitle" data-i18n="certifications-subtitle">Certificações</h4>
         <div class="cert-grid">
           <div class="cert-card">
             <h4>IBM — Artificial Intelligence Fundamentals</h4>
-            <a class="btn primary" href="https://www.credly.com/badges/da9a8396-1b2c-41f9-a7e1-56fbeea31700/public_url" target="_blank" rel="noopener">Ver certificado</a>
+            <a class="btn primary" href="https://www.credly.com/badges/da9a8396-1b2c-41f9-a7e1-56fbeea31700/public_url" target="_blank" rel="noopener noreferrer">Ver certificado</a>
           </div>
           <div class="cert-card">
             <h4>IBM — Web Development Fundamentals</h4>
-            <a class="btn primary" href="https://www.credly.com/badges/0896de0d-ad11-419e-bac7-177c9ead140a/public_url" target="_blank" rel="noopener">Ver certificado</a>
+            <a class="btn primary" href="https://www.credly.com/badges/0896de0d-ad11-419e-bac7-177c9ead140a/public_url" target="_blank" rel="noopener noreferrer">Ver certificado</a>
           </div>
           <div class="cert-card">
             <h4>IBM — Cloud Computing Fundamentals</h4>
-            <a class="btn primary" href="https://www.credly.com/badges/ef50ee29-25fd-425a-8d09-d4fb4f5ec7ed/public_url" target="_blank" rel="noopener">Ver certificado</a>
+            <a class="btn primary" href="https://www.credly.com/badges/ef50ee29-25fd-425a-8d09-d4fb4f5ec7ed/public_url" target="_blank" rel="noopener noreferrer">Ver certificado</a>
           </div>
           <div class="cert-card">
             <h4>IBM — User Experience Design Fundamentals</h4>
-            <a class="btn primary" href="https://www.credly.com/badges/105b60a9-87da-4577-81bf-9c96c1ad7666/public_url" target="_blank" rel="noopener">Ver certificado</a>
+            <a class="btn primary" href="https://www.credly.com/badges/105b60a9-87da-4577-81bf-9c96c1ad7666/public_url" target="_blank" rel="noopener noreferrer">Ver certificado</a>
           </div>
         </div>
       </div>
@@ -115,7 +127,7 @@
 
     <section id="skills" class="skills-section">
       <div class="container">
-        <h3>Tecnologias e Habilidades</h3>
+        <h3 data-i18n="skills-title">Tecnologias e Habilidades</h3>
         <div class="skills">
           <span>Python</span>
           <span>Java</span>
@@ -135,12 +147,30 @@
 
     <section id="contact" class="contact">
       <div class="container">
-        <h3>Contato</h3>
+        <h3 data-i18n="contact-title">Contato</h3>
         <div class="contact-grid">
-          <div class="contact-card"><img src="./icons/email-envelope-outline-shape-with-rounded-corners_icon-icons.com_56530.svg" alt="E-mail" class="icon"/> <a href="mailto:vitoroliveiragomes2314@gmail.com">vitoroliveiragomes2314@gmail.com</a></div>
-          <div class="contact-card"><img src="./icons/phone_handset_icon_125195.svg" alt="Telefone" class="icon"/> (11) 98946-0295</div>
-          <div class="contact-card"><img src="./icons/github-logo_icon-icons.com_73546.svg" alt="GitHub" class="icon"/> <a href="https://github.com/VitorOliveiraGomes" target="_blank">GitHub</a></div>
-          <div class="contact-card"><img src="./icons/linkedin_black_logo_icon_147114.svg" alt="LinkedIn" class="icon"/> <a href="www.linkedin.com/in/vitor-oliveira-gomes-610670317" target="_blank">LinkedIn</a></div>
+          <div class="contact-card">
+            <img src="./icons/email-envelope-outline-shape-with-rounded-corners_icon-icons.com_56530.svg" alt="E-mail" class="icon"/>
+            <div class="contact-info">
+              <a href="mailto:vitoroliveiragomes2314@gmail.com">vitoroliveiragomes2314@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <img src="./icons/phone_handset_icon_125195.svg" alt="Telefone" class="icon"/>
+            <div class="contact-info">(11) 98946-0295</div>
+          </div>
+          <div class="contact-card">
+            <img src="./icons/github-logo_icon-icons.com_73546.svg" alt="GitHub" class="icon"/>
+            <div class="contact-info">
+              <a href="https://github.com/VitorOliveiraGomes" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <img src="./icons/linkedin_black_logo_icon_147114.svg" alt="LinkedIn" class="icon"/>
+            <div class="contact-info">
+              <a href="https://www.linkedin.com/in/vitor-oliveira-gomes-610670317/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -149,6 +179,7 @@
       <div class="container"><p>© <span id="year"></span> Vitor Oliveira Gomes — Portfólio</p></div>
     </footer>
   </main>
+  
   <script src="script.js"></script>
 </body>
 </html>
