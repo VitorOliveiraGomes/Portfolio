@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
-  <meta name="description" content="Portfólio de Vitor Oliveira Gomes - Formado em Análise e Desenvolvimento de Sistemas" />
+  <meta name="description" content="Portfólio de Vitor Oliveira Gomes - Estudante de Análise e Desenvolvimento de Sistemas" />
   <title>Portfólio — Vitor Oliveira Gomes</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -12,16 +12,15 @@
     <div class="container header-inner">
       <div class="brand">
         <h1>Vitor Oliveira Gomes</h1>
-        <p class="subtitle" data-i18n="brand-subtitle">Formado em Análise e Desenvolvimento de Sistemas</p>
+        <p class="subtitle" data-i18n="brand-subtitle">Estudante de Análise e Desenvolvimento de Sistemas</p>
       </div>
       <nav class="nav">
-        <a href="#home" title="Home"><img src="icons/home_icon-icons.com_73532.svg" alt="Home" class="icon-nav" /></a>
-        <a href="#featured">Projetos em Destaque</a>
-        <a href="#projects">Projetos</a>
         <a href="#about">Sobre</a>
-        <a href="#education">Formação</a>
+        <a href="#academic">Trajetória Acadêmica</a>
         <a href="#certifications">Certificados</a>
         <a href="#skills">Habilidades</a>
+        <a href="#featured">Projetos em Destaque</a>
+        <a href="#projects">Projetos</a>
         <a href="#contact">Contato</a>
         <select id="language-selector" class="language-selector">
           <option value="pt">PT</option>
@@ -34,65 +33,28 @@
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h2 data-i18n="hero-title">Olá — eu sou o Vitor.</h2>
-          <p data-i18n="hero-desc">Sou formado em <strong>Análise e Desenvolvimento de Sistemas</strong> com foco em Inteligência Artificial, Desenvolvimento Web e Análise de Dados. Busco constantemente aprender novas tecnologias e aplicá-las em projetos reais para crescer profissionalmente.</p>
-          <p class="meta"><img src="./icons/1491254387-pindestinationmaplocation_82942.svg" alt="Localização" class="icon"/> Santo André, SP</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="featured" class="projects">
-      <div class="container">
-        <h3 data-i18n="featured-title">Projetos em Destaque</h3>
-        <div class="repos-grid">
-          <article class="repo">
-            <h4><a href="https://chattea.yanramos.com.br/login?next=%2F" target="_blank" rel="noopener noreferrer">Chatbot Educacional — Projeto ACEx</a></h4>
-            <p data-i18n="featured-chatbot-desc">Chatbot voltado para estudos e socialização, com foco em acessibilidade e personalização do aprendizado. Desenvolvido como parte do projeto ACEx (Atividades de Extensão).</p>
-            <p data-i18n="featured-chatbot-techs"><strong>Tecnologias:</strong> Python, HTML/CSS, JavaScript, APIs de linguagem natural.</p>
-            <div class="carousel">
-              <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
-              <div class="carousel-container">
-                <img src="./imagens/Captura de tela 2025-11-13 213507.png" alt="Screenshot do Chatbot 1" class="carousel-img active"/>
-                <img src="./imagens/Captura de tela 2025-11-13 213524.png" alt="Screenshot do Chatbot 2" class="carousel-img"/>
-              </div>
-              <button class="carousel-btn next" id="nextBtn">&#10095;</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="projects">
-      <div class="container">
-        <h3 data-i18n="projects-title">Projetos</h3>
-        <p class="lead" data-i18n="projects-lead">Abaixo estão os repositórios públicos mais recentes do meu GitHub.</p>
-        <div class="projects-controls">
-          <button id="loadRepos" class="btn primary" data-i18n="load-repos">Carregar meus projetos do GitHub</button>
-          <a class="btn" href="https://github.com/VitorOliveiraGomes" target="_blank" rel="noopener noreferrer" data-i18n="view-github">Ver no GitHub</a>
-        </div>
-        <div id="repos" class="repos-grid"></div>
-      </div>
-    </section>
-
     <section id="about" class="about">
       <div class="container">
-        <h3 data-i18n="about-title">Sobre mim</h3>
-        <p data-i18n="about-desc">Sou um estudante dedicado de Análise e Desenvolvimento de Sistemas na Fundação Santo André, com foco em Inteligência Artificial, Desenvolvimento Web e Análise de Dados. Tenho raciocínio lógico, facilidade de aprendizado e gosto de resolver problemas práticos com tecnologia. Busco constantemente aprimorar minhas habilidades e contribuir com soluções inovadoras.</p>
+        <h3 data-i18n="hero-subtitle">Olá — eu sou o Vitor</h3>
+        <p data-i18n="hero-desc">Sou formado em Análise e Desenvolvimento de Sistemas (Fundação Santo André, 2025) e atualmente curso Engenharia de Software na Universidade Anhanguera. Trabalho com IA, desenvolvimento web e análise de dados, unindo lógica, curiosidade e entrega rápida. Gosto de criar soluções acessíveis, medir resultados e iterar com base em feedback. Procuro oportunidades para construir produtos com impacto real, colaborando em equipes multidisciplinares.</p>
+      </div>
+    </section>
+
+    <section id="academic" class="education">
+      <div class="container">
+        <h3 data-i18n="academic-title">Trajetória Acadêmica</h3>
+        <p class="lead" data-i18n="academic-lead">Resumo rápido da minha formação atual.</p>
+        <ul class="timeline">
+          <li data-i18n="academic-ads"><strong>Fundação Santo André</strong> — Análise e Desenvolvimento de Sistemas (concluído em 2025)</li>
+          <li data-i18n="academic-software"><strong>Universidade Anhanguera</strong> — Engenharia de Software (cursando)</li>
+        </ul>
       </div>
     </section>
 
     <section id="education" class="education">
       <div class="container">
-        <h3 data-i18n="education-title">Formação, Cursos e Certificações</h3>
+        <h3 data-i18n="education-title">Cursos e Certificações</h3>
         
-        <h4 class="section-subtitle" data-i18n="formation-subtitle">Formação Acadêmica</h4>
-        <ul class="timeline">
-          <li data-i18n="formation-item-1"><strong>Fundação Santo André</strong> — Análise e Desenvolvimento de Sistemas (2024–2025)</li>
-        </ul>
-
         <h4 class="section-subtitle" data-i18n="courses-subtitle">Cursos Complementares</h4>
         <ul class="timeline">
           <li data-i18n="course-1">Introdução à Análise de Dados — Microsoft Power BI</li>
@@ -103,6 +65,7 @@
           <li data-i18n="course-6">Inglês — Intermediário</li>
         </ul>
 
+        <div id="certifications"></div>
         <h4 class="section-subtitle" data-i18n="certifications-subtitle">Certificações</h4>
         <div class="cert-grid">
           <div class="cert-card">
@@ -142,6 +105,39 @@
           <span>Inteligência Artificial</span>
           <span>Desenvolvimento Web</span>
         </div>
+      </div>
+    </section>
+
+    <section id="featured" class="projects">
+      <div class="container">
+        <h3 data-i18n="featured-title">Projetos em Destaque</h3>
+        <div class="repos-grid">
+          <article class="repo">
+            <h4><a href="https://chattea.yanramos.com.br/login?next=%2F" target="_blank" rel="noopener noreferrer">Chatbot Educacional — Projeto ACEx</a></h4>
+            <p data-i18n="featured-chatbot-desc">Chatbot voltado para estudos e socialização, com foco em acessibilidade e personalização do aprendizado. Desenvolvido como parte do projeto ACEx (Atividades de Extensão).</p>
+            <p data-i18n="featured-chatbot-techs"><strong>Tecnologias:</strong> Python, HTML/CSS, JavaScript, APIs de linguagem natural.</p>
+            <div class="carousel">
+              <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+              <div class="carousel-container">
+                <img src="./imagens/Captura de tela 2025-11-13 213507.png" alt="Screenshot do Chatbot 1" class="carousel-img active"/>
+                <img src="./imagens/Captura de tela 2025-11-13 213524.png" alt="Screenshot do Chatbot 2" class="carousel-img"/>
+              </div>
+              <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h3 data-i18n="projects-title">Projetos</h3>
+        <p class="lead" data-i18n="projects-lead">Abaixo estão os repositórios públicos mais recentes do meu GitHub.</p>
+        <div class="projects-controls">
+          <button id="loadRepos" class="btn primary" data-i18n="load-repos">Carregar meus projetos do GitHub</button>
+          <a class="btn" href="https://github.com/VitorOliveiraGomes" target="_blank" rel="noopener noreferrer" data-i18n="view-github">Ver no GitHub</a>
+        </div>
+        <div id="repos" class="repos-grid"></div>
       </div>
     </section>
 
